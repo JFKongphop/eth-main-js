@@ -26,5 +26,6 @@ const deployContract = async (link, contract) =>{
     });
     const data = await response.json()
     console.log(data);
+    console.log(`https://goerli.etherscan.io/address/${data.address}#code`);
 }
 
